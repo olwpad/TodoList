@@ -1,6 +1,6 @@
 import React from 'react'
 
-export const MostarTarea = ({descripcion,setodo,id,todo,done}) => {
+export const MostarTarea = ({descripcion,setodo,id,todo,done,title}) => {
 
     const funcionEliminar=()=>{
     let result=todo.filter((todo)=>{
@@ -24,7 +24,8 @@ export const MostarTarea = ({descripcion,setodo,id,todo,done}) => {
 
   return (
     <li>
-        <span className={`${(done )? "linea":"nada"}` }  onClick={MarcarComoHecho}>{descripcion}</span>
+        <span className={`${(done )? "linea":"nada"}` }  onClick={MarcarComoHecho}>{title}</span>
+        <p>{descripcion} </p>
         <button 
          onClick={funcionEliminar}
         >x</button>
