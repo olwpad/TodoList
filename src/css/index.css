@@ -5,3 +5,27 @@
 .nada{
     text-decoration: none;
 }
+
+.App{
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  flex-direction: column;
+  min-height: 100vh;
+}
+
+
+
+.container{
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  flex-direction: column;
+  border: solid 1px;
+  width: 20%;
+
+}
+.input, textarea{
+  margin: 4px;
+  width: 90%;
+}
