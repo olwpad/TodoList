@@ -41,7 +41,6 @@ export const MostarTarea = ({descripcion,setodo,id,todo,done,title}) => {
 
     return (
       <li>
-       
         {first ? (
           <div className='descripcion-container'>
             <span className={`${done ? "linea" : "nada"}`} onClick={MarcarComoHecho}>{title}</span>
@@ -50,7 +49,8 @@ export const MostarTarea = ({descripcion,setodo,id,todo,done,title}) => {
             <button onClick={() => setfirst(false)}><i className="fas fa-edit"></i></button>
           </div>
         ) : (
-          <div>
+          <div className='descripcion-container'>
+            <h3>Tarea</h3>
             <input
               type="text"
               placeholder='Titulo'

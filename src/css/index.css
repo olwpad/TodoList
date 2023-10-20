@@ -19,7 +19,7 @@ ul {
 
 body {
   font-family: 'Roboto', sans-serif;
-  background:#0d1321;
+  background:#003049;
   color: #333;
 }
 
@@ -32,7 +32,7 @@ body {
 }
 
 h1 {
-  color: #f0ebd8;
+  color: #fff;
   margin: 20px;
   font-size: 28px;
 }
@@ -50,7 +50,7 @@ section {
   flex-direction: column;
   width: calc(33.33% - 20px);
   border-radius: 7px;
-  background-color: #fff;
+  background-color:#e5e5e5;
   box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
   margin: 10px;
 }
@@ -68,7 +68,7 @@ input, textarea {
   display: inline-block;
   padding: 10px 20px;
   font-size: 18px;
-  background-color: #1d2d44;
+  background-color: #003049;
   color: #fff;
   border: none;
   border-radius: 5px;
@@ -80,13 +80,21 @@ input, textarea {
 }
 
 .container2 {
-  border: 1px solid #0077b6;
   width: 100%;
   border-radius: 7px;
-  background-color: #fff;
   box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
   margin: 10px;
 }
+
+.descripcion-container{
+  background-color: #e5e5e5;
+  border-radius: 7px;
+  padding: 20px;
+  margin: 10px;
+  box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+  
+}
+
 
 ul.todo-list {
   padding: 10px;
@@ -110,6 +118,7 @@ i {
   font-size: 24px;
   color: #748cab;
   cursor: pointer;
+  width: 40px;
 }
 
 .parrafo {
@@ -125,6 +134,7 @@ i {
 span,label{
   margin-left: 4px;
  font-family: cursive;
+ font-weight: bold;
   
 }
 
