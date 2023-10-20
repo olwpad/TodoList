@@ -13,7 +13,7 @@
 
 ul {
   list-style: none;
-  font-family: cursive;
+  font-family: arial;
   margin: 5px;
 }
 
@@ -61,7 +61,7 @@ input, textarea {
   border: none;
   padding: 10px;
   border-radius: 4px;
-  font-family: cursive;
+  font-family: arial;
 }
 
 .agregar {
@@ -133,10 +133,36 @@ i {
 }
 span,label{
   margin-left: 4px;
- font-family: cursive;
+ font-family: arial;
  font-weight: bold;
   
 }
+
+
+
+@keyframes shine-moving-blue {
+  0% {
+    text-shadow: 0 0 10px #0074E0;
+  }
+  25% {
+    text-shadow: 5px 0 15px #0074E0;
+  }
+  50% {
+    text-shadow: 10px 0 20px #0074E0;
+  }
+  75% {
+    text-shadow: 15px 0 15px #0074E0;
+  }
+  100% {
+    text-shadow: 20px 0 10px #0074E0;
+  }
+}
+
+.animated-star {
+  animation: shine-moving-blue 4s linear infinite;
+}
+
+
 
 @media screen and (max-width: 768px) {
   .container, .container2 {
