@@ -16,28 +16,38 @@ function App() {
      }
       setodo([...todo,objeto])
       setCount("")
+      setTitle("")
      
   }
   return (
-    <main className='App'>
-      <h1>TodoList <small>Pendientes: {todo.filter(e => !e.done).length}</small></h1>
-      <div className='container'>
-        <input
-          type="text"
-          placeholder='Titulo'
-          value={title}
-          onChange={(event) => setTitle(event.target.value)}
-        />
-        <textarea
-          type="text"
-          placeholder='Descripción'
-          value={count}
-          onChange={(event) => setCount(event.target.value)}
-        />
-        <button onClick={agregar}>Agregar</button>
-      </div>
+<main className='App'>
+  <h1>TodoList <small>Pendientes: {todo.filter(e => !e.done).length}</small></h1>
+  <section>
+    <div className='container'>
+      <label htmlFor="title">Título:</label>
+      <input
+        type="text"
+        id="title"
+        placeholder='Ingrese el título'
+        value={title}
+        onChange={(event) => setTitle(event.target.value)}
+      />
+      <label htmlFor="description">Descripción:</label>
+      <textarea
+        type="text"
+        id="description"
+        placeholder='Ingrese la descripción'
+        value={count}
+        onChange={(event) => setCount(event.target.value)}
+      />
+      <button className='agregar' onClick={agregar}>Agregar</button>
+    </div>
+    <div className='container2'>
       <Lista todo={todo} setodo={setodo} />
-      </main>
+    </div>
+  </section>
+</main>
+
  
   );
   

@@ -41,12 +41,14 @@ export const MostarTarea = ({descripcion,setodo,id,todo,done,title}) => {
 
     return (
       <li>
+       
         {first ? (
-          <div>
+          <div className='descripcion-container'>
+            
             <span className={`${done ? "linea" : "nada"}`} onClick={MarcarComoHecho}>{title}</span>
             <p>{descripcion}</p>
-            <button onClick={funcionEliminar}>x</button>
-            <button onClick={() => setfirst(false)}>Editar</button>
+            <button className='eliminar' onClick={funcionEliminar}><i className="fas fa-trash-alt"></i></button>
+            <button onClick={() => setfirst(false)}><i className="fas fa-edit"></i></button>
           </div>
         ) : (
           <div>
@@ -63,7 +65,7 @@ export const MostarTarea = ({descripcion,setodo,id,todo,done,title}) => {
               value={parrafo}
               onChange={(e) => setParrafo(e.target.value)}
             />
-            <button onClick={funcioneditar}>Editar</button>
+            <button onClick={funcioneditar}><i className="fas fa-check"></i></button>
           </div>
         )}
       </li>
