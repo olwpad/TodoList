@@ -43,7 +43,7 @@ export const MostarTarea = ({descripcion,setodo,id,todo,done,title}) => {
       <li>
         {first ? (
           <div className='descripcion-container'>
-            <span className={`${done ? "linea" : "nada"}`} onClick={MarcarComoHecho}>{title}</span>
+            <span className={`${done ? "linea" : "nada"}`} onClick={MarcarComoHecho}> <i class="fas fa-star"></i>{title}</span>
             <p className='parrafo'>{descripcion}</p>
             <button className='eliminar' onClick={funcionEliminar}><i className="fas fa-trash-alt"></i></button>
             <button onClick={() => setfirst(false)}><i className="fas fa-edit"></i></button>
