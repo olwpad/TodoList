@@ -2,7 +2,7 @@ import React, { useState } from 'react'
 
 export const MostarTarea = ({descripcion,setodo,id,todo,done,title}) => {
   const [first, setfirst] = useState(true)
-  const[content, setContent]= useState(title)
+  const[titulo, setTitulo]= useState(title)
   const[parrafo, setParrafo]= useState(descripcion)
 
 
@@ -28,7 +28,7 @@ export const MostarTarea = ({descripcion,setodo,id,todo,done,title}) => {
     const funcioneditar=()=>{
       let result=todo.map((todo)=>{
         if(todo.id==id){
-            todo.title=content,
+            todo.title=titulo,
             todo.descripcion=parrafo;
            
         }
@@ -54,8 +54,8 @@ export const MostarTarea = ({descripcion,setodo,id,todo,done,title}) => {
             <input
               type="text"
               placeholder='Titulo'
-              value={content}
-              onChange={(e) => setContent(e.target.value)}
+              value={titulo}
+              onChange={(e) => setTitulo(e.target.value)}
             />
 
             <textarea
